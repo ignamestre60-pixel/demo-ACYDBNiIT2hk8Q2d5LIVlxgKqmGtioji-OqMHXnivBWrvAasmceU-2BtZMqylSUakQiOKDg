@@ -1,0 +1,127 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGMESU - Automatización de Procesos Empresariales con IA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #00d9ff;
+            --color-accent: #0099cc;
+            --color-bg: #0a0a0a;
+            --color-surface: #151515;
+            --color-surface-light: #1f1f1f;
+            --color-text: #ffffff;
+            --color-text-secondary: #b0b0b0;
+            --color-border: #2a2a2a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid var(--color-border);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .header-logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .header-nav a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            color: var(--color-primary);
+        }
+
+        .btn-header {
+            background-color: var(--color-primary);
+            color: var(--color-bg);
+            padding: 10px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-header:hover {
+            background-color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 0 20px;
+            }
+
+            .header-nav {
+                gap: 20px;
+            }
+
+            .header-nav a {
+                display: none;
+            }
+
+            .btn-header {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+
+        /* MAIN CONTENT */
+        main {
+            margin-top: 70px;
+        }
+
+        /* BANNER DEMO */
+        .banner-demo {
+            background: linear-gradient(135deg, rgba(0
